@@ -1,4 +1,13 @@
-{{- with resources.Get "css/main.css" }}
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+<link href="/icons/bootstrap-icons.min.css" rel="stylesheet">
+<link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+{{- with resources.Get "scss/bootstrap.scss" | toCSS }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
@@ -7,3 +16,5 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
+<link rel="stylesheet" href="/css/style.css">

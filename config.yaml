@@ -1,4 +1,77 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: superstoretheme
+baseURL: https://esuperstore.netlify.app/
+languageCode: 'en-us'
+title: 'ESuperstore'
+theme: 'superstoretheme'
+enableGitInfo: true
+
+module:
+  mounts:
+    - source: "node_modules/bootstrap"
+      target: "assets/scss/bootstrap"
+    - source: "node_modules/@fortawesome/fontawesome-free"
+      target: "static/fontawesome"
+    - source: "node_modules"
+      target: "static/js"
+
+menus:
+  main:
+    - identifier: "Home"
+      name: "Home"
+      url: "/"
+      weight: 100
+    - identifier: "Shop"
+      name: "Shop"
+      url: "/shop"
+      weight: 200
+
+  shopinfo:
+     - identifier: "About Us"
+       name: "About Us"
+       url: "/about"
+       weight: 500
+     - identifier: "Contact Us"
+       name: "Contact Us"
+       url: "/contact"
+       weight: 600
+     - identifier: "Privacy Policy"
+       name: "Privacy Policy"
+       url: "/privacy-policy"
+       weight: 700
+     - identifier: "Terms & Conditions"
+       name: "Terms & Conditions"
+       url: "/terms-conditions"
+       weight: 800
+     - identifier: "Returns Policy"
+       name: "Returns Policy"
+       url: "/returns-policy"
+       weight: 900
+     - identifier: "FAQs & Help"
+       name: "FAQs & Help"
+       url: "/faqs"
+       weight: 1000
+    
+  account:
+     - identifier: "My Account"
+       name: "My Account"
+       url: "/account"
+       weight: 100
+     - identifier: "Shop Details"
+       name: "Shop Details"
+       url: "/shop"
+       weight: 200
+     - identifier: "Shopping Cart"
+       name: "Shopping Cart"
+       url: "/shop/cart"
+       weight: 300
+     - identifier: "Wishlist"
+       name: "Wishlist"
+       url: "/shop/wishlist"
+       weight: 400
+     - identifier: "Order History"
+       name: "Order History"
+       url: "/shop/order/history"
+       weight: 500
+     - identifier: "International Orders"
+       name: "International Orders"
+       url: "/shop/order/international"
+       weight: 600
