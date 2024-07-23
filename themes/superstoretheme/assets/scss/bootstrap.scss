@@ -14,7 +14,7 @@ $body-color: #747d88;
 
 $headings-color: $dark;
 
-$headings-font-weight: 400;
+$headings-font-weight: 600;
 
 $display-font-weight: 800;
 
@@ -29,5 +29,6 @@ $border-radius-lg: $border-radius;
 $link-decoration: none;
 
 $enable-negative-margins: true;
+
 
 @import "bootstrap-5.0.0/scss/bootstrap";

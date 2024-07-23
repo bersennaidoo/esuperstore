@@ -1,6 +1,6 @@
 baseURL: https://esuperstore.netlify.app/
 languageCode: 'en-us'
-title: 'ESuperstore'
+title: 'SurgiMed'
 theme: 'superstoretheme'
 enableGitInfo: true
 
