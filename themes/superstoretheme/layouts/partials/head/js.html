@@ -12,11 +12,11 @@
 
 {{- with resources.Get "js/react/index.jsx" }}
   {{- if eq hugo.Environment "development" }}
-    {{- with . | js.Build }}
+    {{- with . | js.Build (dict "JSX" "automatic") }}
       <script defer src="{{ .RelPermalink }}"></script>
     {{- end }}
   {{- else }}
-    {{- $opts := dict "minify" true }}
+    {{- $opts := dict ("minify" true "JSX" "automatic") }}
     {{- with . | js.Build $opts | fingerprint }}
       <script defer src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
     {{- end }}
