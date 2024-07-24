@@ -12,8 +12,6 @@ module:
       target: "static/fontawesome"
     - source: "node_modules"
       target: "static/js"
-    - source: "static/images"
-      target: "assets/js/react/images"
 
 menus:
   main:
