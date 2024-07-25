@@ -3,41 +3,41 @@ import React from "react";
 function ProductDetails() {
   return (
     <>
-      <div className="container my-5">
+      <div className="container my-5 pt-5">
         <div className="row">
           <div className="col-md-5">
             <div className="main-img">
               <img
                 className="img-fluid"
-                src="https://cdn.pixabay.com/photo/2015/07/24/18/40/model-858753_960_720.jpg"
+                src="/images/syringes.jpg"
                 alt="ProductS"
               />
               <div className="row my-3 previews">
                 <div className="col-md-3">
                   <img
                     className="w-100"
-                    src="https://cdn.pixabay.com/photo/2015/07/24/18/40/model-858754_960_720.jpg"
+                    src="/images/syringes.jpg"
                     alt="Sale"
                   />
                 </div>
                 <div className="col-md-3">
                   <img
                     className="w-100"
-                    src="https://cdn.pixabay.com/photo/2015/07/24/18/38/model-858749_960_720.jpg"
+                    src="/images/syringes.jpg"
                     alt="Sale"
                   />
                 </div>
                 <div className="col-md-3">
                   <img
                     className="w-100"
-                    src="https://cdn.pixabay.com/photo/2015/07/24/18/39/model-858751_960_720.jpg"
+                    src="/images/syringes.jpg"
                     alt="Sale"
                   />
                 </div>
                 <div className="col-md-3">
                   <img
                     className="w-100"
-                    src="https://cdn.pixabay.com/photo/2015/07/24/18/37/model-858748_960_720.jpg"
+                    src="/images/syringes.jpg"
                     alt="Sale"
                   />
                 </div>
@@ -88,7 +88,6 @@ function ProductDetails() {
                 </div>
               </div>
             </div>
-
             <div className="product-details my-4">
               <p className="details-title text-color mb-1">Product Details</p>
               <p className="description">
@@ -139,44 +138,28 @@ function ProductDetails() {
         <div className="row">
           <div className="col-md-3">
             <div className="similar-product">
-              <img
-                className="w-100"
-                src="https://source.unsplash.com/gsKdPcIyeGg"
-                alt="Preview"
-              />
+              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
               <p className="title">Lovely black dress</p>
               <p className="price">$100</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="similar-product">
-              <img
-                className="w-100"
-                src="https://source.unsplash.com/sg_gRhbYXhc"
-                alt="Preview"
-              />
+              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
               <p className="title">Lovely Dress with patterns</p>
               <p className="price">$85</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="similar-product">
-              <img
-                className="w-100"
-                src="https://source.unsplash.com/gJZQcirK8aw"
-                alt="Preview"
-              />
+              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
               <p className="title">Lovely fashion dress</p>
               <p className="price">$200</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="similar-product">
-              <img
-                className="w-100"
-                src="https://source.unsplash.com/qbB_Z2pXLEU"
-                alt="Preview"
-              />
+              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
               <p className="title">Lovely red dress</p>
               <p className="price">$120</p>
             </div>

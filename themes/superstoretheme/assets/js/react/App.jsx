@@ -7,11 +7,10 @@ import Layout from "./components/Layout.jsx";
 
 function App() {
   return (
-      <Routes>
-        <Route path="/shop/" element={<Layout />}>
-          <Route path="details" element={<ProductDetails />} />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/shop/" element={<Overview />} />
+      <Route path="/shop/details" element={<ProductDetails />} />
+    </Routes>
   );
 }
 
