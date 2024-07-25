@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const image = "/images/800x600.png";
 const items = [
@@ -18,7 +20,7 @@ function Overview() {
   return (
     <div>
       <div className="container" id="shopheader">
-        <h1 className="display-1">
+        <h1 className="">
           Surgical and Medical Products Overview Collage below
         </h1>
         <img className="img-fluid rounded" src={image} alt="collage" />
@@ -26,10 +28,9 @@ function Overview() {
       <div className="container">
         {items.map((item) => (
           <div className="container" key={item.id}>
-            <h3>{item.name}</h3>
-            <a href="#">
-              <img className="img-fluid" src={item.image} alt="surgical" />
-            </a>
+            <Link to="/shop/details">
+              {item.name}
+            </Link>
           </div>
         ))}
       </div>

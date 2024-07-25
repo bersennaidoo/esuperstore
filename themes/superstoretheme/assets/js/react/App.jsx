@@ -1,12 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import Overview from "./components/Overview";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Overview from "./components/Overview.jsx";
+import ProductDetails from "./components/ProductDetails.jsx";
+import Layout from "./components/Layout.jsx";
 
 function App() {
   return (
-   <div className="container mb-5 mt-5">
-     <Overview />
-  </div>
+      <Routes>
+        <Route path="/shop/" element={<Layout />}>
+          <Route path="details" element={<ProductDetails />} />
+        </Route>
+      </Routes>
   );
 }
 
