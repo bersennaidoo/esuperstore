@@ -1,172 +1,51 @@
 import React from "react";
+import { useState } from "react";
 
 function ProductDetails() {
   return (
-    <>
-      <div className="container my-5 pt-5">
-        <div className="row">
-          <div className="col-md-5">
-            <div className="main-img">
-              <img
-                className="img-fluid"
-                src="/images/syringes.jpg"
-                alt="ProductS"
-              />
-              <div className="row my-3 previews">
-                <div className="col-md-3">
-                  <img
-                    className="w-100"
-                    src="/images/syringes.jpg"
-                    alt="Sale"
-                  />
-                </div>
-                <div className="col-md-3">
-                  <img
-                    className="w-100"
-                    src="/images/syringes.jpg"
-                    alt="Sale"
-                  />
-                </div>
-                <div className="col-md-3">
-                  <img
-                    className="w-100"
-                    src="/images/syringes.jpg"
-                    alt="Sale"
-                  />
-                </div>
-                <div className="col-md-3">
-                  <img
-                    className="w-100"
-                    src="/images/syringes.jpg"
-                    alt="Sale"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7">
-            <div className="main-description px-2">
-              <div className="category text-bold">Category: Women</div>
-              <div className="product-title text-bold my-3">
-                Black dress for Women
-              </div>
+    <a href="#" className="group relative block overflow-hidden">
+      <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
+        <span className="sr-only">Wishlist</span>
 
-              <div className="price-area my-4">
-                <p className="old-price mb-1">
-                  <del>$100</del>{" "}
-                  <span className="old-price-discount text-danger">
-                    (20% off)
-                  </span>
-                </p>
-                <p className="new-price text-bold mb-1">$80</p>
-                <p className="text-secondary mb-1">
-                  (Additional tax may apply on checkout)
-                </p>
-              </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="h-4 w-4"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+          />
+        </svg>
+      </button>
 
-              <div className="buttons d-flex my-5">
-                <div className="block">
-                  <a href="#" className="shadow btn custom-btn ">
-                    Wishlist
-                  </a>
-                </div>
-                <div className="block">
-                  <button className="shadow btn custom-btn">Add to cart</button>
-                </div>
+      <img
+        src="/images/400x300.png"
+        alt=""
+        className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+      />
 
-                <div className="block quantity">
-                  <input
-                    type="number"
-                    className="form-control"
-                    id="cart_quantity"
-                    value="1"
-                    min="0"
-                    max="5"
-                    placeholder="Enter email"
-                    name="cart_quantity"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="product-details my-4">
-              <p className="details-title text-color mb-1">Product Details</p>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                excepturi odio recusandae aliquid ad impedit autem commodi earum
-                voluptatem laboriosam?{" "}
-              </p>
-            </div>
+      <div className="relative border border-gray-100 bg-white p-6">
+        <span className="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium">
+          {" "}
+          New{" "}
+        </span>
 
-            <div className="row questions bg-light p-3">
-              <div className="col-md-1 icon">
-                <i className="fa-brands fa-rocketchat questions-icon"></i>
-              </div>
-              <div className="col-md-11 text">
-                Have a question about our products at E-Store? Feel free to
-                contact our representatives via live chat or email.
-              </div>
-            </div>
+        <h3 className="mt-4 text-lg font-medium text-gray-900">Robot Toy</h3>
 
-            <div className="delivery my-4">
-              <p className="font-weight-bold mb-0">
-                <span>
-                  <i className="fa-solid fa-truck"></i>
-                </span>{" "}
-                <b>Delivery done in 3 days from date of purchase</b>{" "}
-              </p>
-              <p className="text-secondary">
-                Order now to get this product delivery
-              </p>
-            </div>
-            <div className="delivery-options my-4">
-              <p className="font-weight-bold mb-0">
-                <span>
-                  <i className="fa-solid fa-filter"></i>
-                </span>{" "}
-                <b>Delivery options</b>{" "}
-              </p>
-              <p className="text-secondary">View delivery options here</p>
-            </div>
-          </div>
-        </div>
+        <p className="mt-1.5 text-sm text-gray-700">$14.99</p>
+
+        <form className="mt-4">
+          <button className="block w-full rounded bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105">
+            Add to Cart
+          </button>
+        </form>
       </div>
-
-      <div className="container similar-products my-4">
-        <hr />
-        <p className="display-5">Similar Products</p>
-
-        <div className="row">
-          <div className="col-md-3">
-            <div className="similar-product">
-              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
-              <p className="title">Lovely black dress</p>
-              <p className="price">$100</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="similar-product">
-              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
-              <p className="title">Lovely Dress with patterns</p>
-              <p className="price">$85</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="similar-product">
-              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
-              <p className="title">Lovely fashion dress</p>
-              <p className="price">$200</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="similar-product">
-              <img className="w-100" src="/images/syringes.jpg" alt="Preview" />
-              <p className="title">Lovely red dress</p>
-              <p className="price">$120</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    </a>
   );
 }
 
