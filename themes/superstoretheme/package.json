@@ -66,5 +66,8 @@
   },
   "devDependencies": {},
   "name": "eshopbstheme",
+  "scripts": {
+    "prod": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap --watch=forever"
+  },
   "version": "0.1.0"
 }
