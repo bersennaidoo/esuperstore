@@ -7,6 +7,7 @@ import DeleteProduct from './views/products/DeleteProduct'
 import EditProduct from './views/products/EditProduct'
 import Products from './views/products/Products'
 import ViewProduct from './views/products/ViewProduct'
+import Animal from "./components/Animal";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Link to="/react-essentials/products/1/edit">Edit Product</Link>
             <Link to="/react-essentials/products/1/delete">Delete Product</Link>
             <Link to="/react-essentials/products/1">View Product</Link>
+            <Link to="/react-essentials/animals">View Animals</Link>
           </nav>
           <Routes>
             <Route path="/react-essentials">
@@ -28,6 +30,7 @@ function App() {
               <Route path="products/:id/edit" element={<EditProduct />} />
               <Route path="products/:id/delete" element={<DeleteProduct />} />
               <Route path="products/:id" element={<ViewProduct />} />
+              <Route path="animals" element={<Animal />} />
             </Route>
           </Routes>
         </BrowserRouter>
