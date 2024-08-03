@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['themes/superstoretheme/layouts/**/*.html', 'themes/superstoretheme/assets/js/react/**/*.{jsx,js,tsx,ts}'],
+  content: ['themes/superstoretheme/layouts/**/*.html', 'themes/superstoretheme/assets/js/**/*.{jsx,js,tsx,ts}',],
   theme: {
     extend: {},
   },
