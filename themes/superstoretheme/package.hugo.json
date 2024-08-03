@@ -2,7 +2,8 @@
   "name": "eshopbstheme",
   "version": "0.1.0",
   "scripts": {
-      "prod": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap --watch=forever"
+      "dev": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap --watch=forever",
+      "prod": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap"
    },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
