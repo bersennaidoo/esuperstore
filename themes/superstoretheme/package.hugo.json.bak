@@ -34,7 +34,6 @@
     "@tailwindcss/forms": "*",
     "tailgrids": "*",
     "styled-components": "^6.0.7",
-    "axios": "^0.21.1",
-    "esbuild": "*"
+    "axios": "^0.21.1"
   }
 }
