@@ -70,6 +70,6 @@
   "name": "eshopbs5",
   "version": "0.1.0",
   "scripts": {                                                                                             
-    "prod": "esbuild --bundle --loader:.png=file static/react/main.tsx --outdir=static/react --minify --sourcemap"
+    "prod": "esbuild --bundle --loader:.png=file themes/superstoretheme/static/react/main.tsx --outdir=themes/superstoretheme/static/react --minify --sourcemap"
   }  
 }
