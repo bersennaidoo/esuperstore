@@ -70,7 +70,7 @@
   "name": "eshopbstheme",
   "scripts": {
     "dev": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap --watch=forever",
-    "prod": "esbuild --bundle static/react/main.tsx --outdir=static/react --minify --sourcemap"
+    "prod": "esbuild --bundle --loader:.png=file static/react/main.tsx --outdir=static/react --minify --sourcemap"
   },
   "version": "0.1.0"
 }

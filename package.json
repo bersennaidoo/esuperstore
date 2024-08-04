@@ -68,5 +68,8 @@
   },
   "devDependencies": {},
   "name": "eshopbs5",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {                                                                                             
+    "prod": "esbuild --bundle --loader:.png=file static/react/main.tsx --outdir=static/react --minify --sourcemap"
+  }  
 }
